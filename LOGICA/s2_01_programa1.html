@@ -1,0 +1,48 @@
+<h1> Atividade 01 - semana 2: Rosa de La Vega</h1>
+ <h2> 01. Desenhando gráficos com canvas </h2>
+  <h3> 02. O canvas será nossa tela </h3>
+  <h3> 03. Utilizando APIs </h3>
+  <h3> 04. Desenhando com um pincel </h3>
+  <h3> 05. Trabalhando com coordenadas </h3>
+  <h3> 06. Nossa primeira obra de arte. Será?</h3>
+  <h3> 07. A vida não é só feita de retângulos </h3>
+  <h3> 08. Tem espaço para círculo também? </h3>  
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext ('2d');
+
+// para ocultar uma parte do código, devo inserir /*início e */ no final.
+
+    pincel.fillStyle = 'lightgrey';
+    pincel.fillRect(0,0, 600, 400);
+
+    pincel.fillStyle = 'green';
+    pincel.fillRect(0,0, 200, 400);
+
+    pincel.fillStyle = 'red';
+    pincel.fillRect(400, 0, 200, 400);
+
+    pincel.fillStyle = 'yellow';
+    pincel.beginPath();
+    pincel.moveTo(300, 200);
+    pincel.lineTo(200, 400);
+    pincel.lineTo(400, 400);
+    pincel.fill();
+
+    //criar um triangulo, moveTo o primeiro ponto, lineTo fazer a linha até.
+
+    pincel.fillStyle = 'blue';
+    pincel.beginPath();
+    pincel.arc(300, 200, 50, 0, 2 * 3.14);
+    pincel.fill();
+
+    //fillStyle representa a cor, beginPath é o caminho a seguir, arc significa posição, fill é o preenchimento.
+
+
+    //todas são bibliotecas ou api do java script.
+
+</script>

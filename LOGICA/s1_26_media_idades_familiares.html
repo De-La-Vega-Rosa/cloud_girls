@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> Atividade 26 - semana 1: Rosa de La Vega</h1>
+ <h2> 07. Repita tarefas </h2>
+  <h3> 12. Acumulando valores </h3>
+
+<script> 
+
+function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var idadePedro = 28;
+    var idadeMarta = 32;
+    var idadeJorge = 60;
+    var idadeBete = 22;
+
+//    var totalIdades = (idadeDePedro + idadeMarta + idadeJorge + idadeBete);
+//    var mediaIdades = totalIdades/4;
+//      mostra(mediaIdades);
+
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares?"));
+
+    var numero = 1;
+    while(numero <= totalFamiliares) {
+        var totalIdades = 0;
+        var idade = parseInt(prompt("Informe idade do familiar"));
+        totalIdades = totalIdades = idade; 
+        numero++;
+    }
+    var mediaDasIdades = totalIdades/totalFamiliares;
+    mostra ("A média das idade dos familiares é " + mediaDasIdades);
+    mostra ("FIM");
+</script>
+
+    
+
+</script>
+</body>
+</html>

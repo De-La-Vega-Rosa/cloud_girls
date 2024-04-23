@@ -1,0 +1,34 @@
+<h1> Atividade 06 - semana 2: Rosa de La Vega</h1>
+ <h2> 02. Extraindo funções </h2>
+  <h3> 08. Uma inofensiva flor </h3>
+
+<canvas width="600" height="400"></canvas>
+
+<script>
+
+    var tela = document.querySelector('canvas');
+    var pincel = tela.getContext('2d');
+
+    pincel.fillStyle = 'lightgray';
+    pincel.fillRect(0, 0, 600, 400);
+
+    function desenhaCirculo(x, y, raio, cor) {
+
+        pincel.fillStyle = cor;
+        pincel.beginPath();
+        pincel.arc(x, y, raio, 0, 2 * Math.PI);
+        pincel.fill();
+    }
+
+    function desenhaFlor(x, y) {
+
+        desenhaCirculo(x, y, 10, "red");
+        desenhaCirculo(x+20, y, 10, "black");
+        desenhaCirculo(x, y-20, 10, 'yellow');
+        desenhaCirculo(x, y+20, 10, 'blue');
+        desenhaCirculo(x-20, y, 10, 'orange');
+    }
+
+    desenhaFlor (300, 200);
+
+</script>

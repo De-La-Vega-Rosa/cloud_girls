@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1> Atividade 20 - semana 1: Rosa de La Vega</h1>
+ <h2> 05. Pratique resolvendo problemas do dia a dia </h2>
+  <h3> 01. Calculando IMC </h3>
+
+  <h3> 02. Cálculo do IMC, aplicação </h3>
+<br>
+
+    <script> 
+
+        function pulaLinha() {
+
+            document.write("<br><br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        
+        var pesoFlavio = 73;
+        var alturaFlavio = 1.71;
+
+        var imcFlavio = pesoFlavio / (alturaFlavio * alturaFlavio);
+
+        mostra ("O IMC do Flávio é " + imcFlavio);
+
+//cálculo do imc é o peso divido pela altura vezes altura;
+//pode arredondar com Match.round?
+
+        var pesoAmigo = 68;
+        var alturaAmigo = 1.72;
+
+        var imcAmigo = pesoAmigo / (alturaAmigo * alturaAmigo);
+
+        mostra ("O IMC do amigo é " + imcAmigo);
+
+        var pesoTia = 50;
+        var alturaTia = 1.62;
+
+        var imcTia = pesoTia / (alturaTia * alturaTia);
+
+        mostra ("O IMc da tia do amigo é " + imcTia);
+    </script>
+        
+  <h3> 04. Função que recebe mais de um parâmetro </h3>
+<br>
+
+    <script>
+//reduzindo a estrutura exemplo a seguir:
+
+        function calculaImc(peso, altura) {
+            
+            var imc = peso / (altura * altura);
+            mostra("O imc calculado é " + imc);
+        }
+
+        calculaImc(73, 1.71);
+        calculaImc(68, 1.72);
+        calculaImc(50, 1.62);
+
+    </script>
+
+  <h3> 04. Função que recebe mais de um parâmetro, parte 2 </h3>
+
+<script> 
+
+    function pulaLinha() {
+        
+        document.write ("<br><br>");
+    }
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc (altura, peso) {
+
+        var imc = peso / (altura * altura);
+        mostra ("O imc calculado é " + imc);        
+    }
+
+    calculaImc(1.71, 73);
+    calculaImc(1.72, 68);
+
+    </script>
+
+  <h3> 05. Retorno de funções </h3>
+<br>
+
+    <script>
+ 
+//criar função para somar o imc dos participantes
+
+    function calculasomaImc (altura1, peso1, altura2, peso2) {
+
+            var imc1 = peso1 / (altura1 * altura1);
+            var imc2 = peso2 / (altura2 * altura2);
+            
+            var imcTotal = imc1 + imc2
+            mostra ("A soma dos imc's é " + imcTotal);
+    }
+
+    calculasomaImc (1.71, 73, 1.72, 68);
+
+//como somar o imc de 3 ou 7 pessoas?
+//NaN = note a number.
+
+document.write("<h3> 05. Retorno de funções: Exercício 2 </h3>");
+
+    function pulaLinha() {
+        
+        document.write ("<br><br>");
+    }
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc (altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;               
+    }
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc (1.72, 68);
+
+    mostra(imcFlavio);
+    mostra(imcAmigo);
+
+//O igual (=) é um sinal de atribuição, então posso adicionar à variável.
+//então no caso acima a variável imcFlavio recebe (=) o calculaImc.
+//para imprimir o resultado da função calculaImc é necessário inserir
+//inserir a cláusula (return): return imc.
+
+
+document.write("<h3> 06. Véspera de carnaval </h3>");
+
+    function pulaLinha() {
+        
+        document.write ("<br><br>");
+    }
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function geraCodigo(letra, numero1, numero2) {
+        
+        return "GH1022";
+    }
+    var codigo = geraCodigo("A", 20, 30);
+        document.write(codigo); 
+    // mostrou GH1022   
+
+    //Uma função pode receber zero ou mais parâmetros.
+    //Pode realizar cálculos e operações, sendo variáveis ou outras funções.
+    //Deve retornar apenas um valor, por isto a instrução (return).
+    //No caso acima, a função não lê nada apenas imprime ("GH1022").
+
+    </script>
+
+<h3> 07. Retornando um valor específico </h3>
+
+    <script>
+    
+    function pulaLinha() {
+        
+        document.write ("<br><br>");
+    }
+    
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function funcaoQualquer() {
+        
+        var n1 = 10;
+        var n2 = 20;
+        var n3 = 30;
+        
+        return n2
+    }   
+    
+</script>
+
+<h3> 08. Olha o cálculo do IMC novamente </h3>
+
+<script> 
+   function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    function calculaImc(altura, peso) {
+
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcCalculado = calculaImc(1.77, 75);
+    mostra("O meu IMC é : " + imcCalculado);
+
+</script>
+
+<h3> 09. Entendendo a fundo retorno de funções </h3>
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+//inserindo o return ele avalia a expressão, calculaImc recebe os parâmetros.
+//primeiro o calculaImc realiza a operação do () e entrega para a variável.
+//então posso declarar com documento.write.
+
+    function calculaImc(altura, peso) {
+
+        return peso / (altura * altura);
+    }    
+
+    var imcFlavio = calculaImc(1.71, 73);
+    var imcAmigo = calculaImc(1.72, 68);
+    var totalImc = imcFlavio + imcAmigo;
+    document.write ("A soma dos imc's é " + totalImc);
+
+//poderia simplificar inserindo apenas uma var assim: 
+//var totalImc = calculaImc(1.71, 73) + calculaImc(1.72, 68); 
+
+</script>
+
+<h3> 11. Interagindo com usuário </h3>
+
+<script>
+    
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+    }
+    
+    var nome = prompt ("Informe seu nome");
+    var alturaInformada = prompt(nome + ", informa sua altura, utilizando ponto");
+    var pesoInformado = prompt(nome + ", informa seu peso, se houver fração utiliza ponto");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+    document.write(nome + ", o seu IMC calculado é " + imc);
+
+    //criar programa genérico
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <br>
+    <h1> Atividade 17 - semana 1: Rosa de La Vega</h1>
+    <h2> 04. Crie suas próprias funcionalidades </h2>
+    <h3> 01. Melhorando a manutenção do código </h3>
+    <br>
+
+    <script>
+    
+        var ano = 2016;
+        var puloLinha = "<br>";
+    
+        document.write("Flávio tem " + (ano - 1977) + " anos");
+        document.write(puloLinha);
+        document.write("Joaquim tem " + (ano - 1996) + " anos");
+        document.write(puloLinha);
+    
+        ano = 2017;
+        document.write("Barney tem " + (ano - 1976) + " anos");
+    
+    </script>
+
+    <h3> 04. Funções que não funcionam </h3>
+    <br>
+    <h3> Exercício 1</h3>
+    
+    
+    <script>
+    
+        function somaDoisNumeros() {
+    
+            document.write(10 + 20);
+        }
+    <!--erro de sintaxe multiplica e divide-->
+    
+    //    function multiplicaDoisNumeros {
+    
+    //        document.write(10 * 20);
+    //    }
+    
+    //    function divideDoisNumeros () 
+    //        document.write(10/20);
+    
+    </script>
+ 
+ <h3> 05. Funções com parâmetros </h3>
+ <br>
+ <h3> Exercício 1</h3>
+
+ <script>
+    document.write("Olá pessoal!");
+
+    document.write("Olá pessoal!");
+
+    function pulaLinha() {
+
+        document.write("<br>");
+        document.write("<br>");
+
+}
+
+var ano = 2016;
+
+// document.write("Flávio tem " + (ano - 1977) + " anos");
+
+pulaLinha();
+
+// document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+pulaLinha();
+
+ano = 2017;
+
+// document.write("Barney tem " + (ano - 1976) + " anos");
+// document.write("Olá pessoal!");
+mostra("Olá pessoal");
+
+</script>
+
+<script>
+    
+    function pulaLinha() {
+        
+        document.write("<br>");
+        document.write("<br>");
+        
+    }
+
+    function mostra(){
+
+        document.write("Olá");
+        pulaLinha ();
+
+    }
+
+var ano = 2016;
+
+// document.write("Flávio tem " + (ano - 1977) + " anos");
+
+mostra("Flávio tem " + (ano - 1977) + " anos");
+
+pulaLinha();
+
+// document.write("Joaquim tem " + (ano - 1996) + " anos");
+
+mostra ("Joaquim tem " + (ano - 1996) + " anos");
+pulaLinha();
+
+ano = 2017;
+
+// document.write("Barney tem " + (ano - 1976) + " anos");
+
+mostra ("Barney tem " + (ano - 1976) + " anos");
+
+// document.write("Olá pessoal!");
+
+mostra("Olá pessoal!");
+
+
+</script>
+
+<script>
+
+    function pulaLinha () {
+
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra (frase) {
+
+        document.write(frase);
+        pulaLinha ();
+    }
+
+    mostra ("Olá pessoal!");
+
+    var ano = 2016;
+
+    mostra("Flávio tem " + (ano - 1977) + " anos");
+
+
+    mostra("Joaquim tem " + (ano - 1996) + " anos");
+
+
+    ano = 2017
+
+    mostra("Barney tem " + (ano - 1976) + " anos");
+
+    </script>
+
+    <h3> 07. A pegadinha que deu errado </h3>
+    <br>
+    <h3> Exercício 1</h3>
+    
+    
+    <script>
+        function fazPegadinha() {
+        alert("Olá");
+        alert("amiga!");
+        alert("Tá");
+        alert("bastante");
+        alert("entediada?");
+        alert("Em ficar");
+        alert("Clicando em");
+        alert("Ok");
+        alert("né?");
+    }
+
+  //  fazPegadinha ();
+
+    </script>
+
+    <h3> 08. Será que ele pegou mesmo a vantagem do uso de funções? </h2>
+    <br>
+
+    
+<script>
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    var titulo = "Bem-vindo ao meu programa!";
+
+    document.write("<h1>" + titulo + "</h1>");
+
+    pulaLinha();
+    pulaLinha();
+
+    document.write("Vocês não sabem o que tive que aprender para fazer isso!");
+
+    pulaLinha();
+    pulaLinha();
+
+    document.write("Contudo, assistindo os vídeos e estudando ...");
+
+    pulaLinha();
+    pulaLinha();
+
+    document.write("Eu vou mais longe!");
+
+    pulaLinha();
+    pulaLinha();
+</script>
+
+    <h3> 09. Alerta diferente </h2>
+    <br>
+
+<script>
+
+//        var idade1 = 10;
+//        var idade2 = 20;
+//        var idade3 = 30;
+//        var totalIdades = idade1 + idade2 + idade3;
+//        var mediaIdades = totalIdades/3;
+//        alert("***Total de idades é " + totalIdades + "***");
+//        alert("***A média das idades é " +  mediaIdades + "***");
+</script>    
+
+<script>
+        function exibeAlerta(mensagem) {
+            alert("***" + mensagem + "***");
+        } 
+
+        var idade1 = 10;
+        var idade2 = 20;
+        var idade3 = 30;
+        var totalIdades = idade1 + idade2 + idade3;
+        var mediaIdades = totalIdades/3;
+        
+        exibeAlerta("Total de idades é " + totalIdades);
+        exibeAlerta("A média das idades é " +  mediaIdades);
+
+        exibeAlerta ();
+    
+</script>
+
+    <h3> 10. Não mostra como fez? Eu recrio do zero </h2>
+    <br>
+
+     
+<script>
+    function pulaLinha () {
+        
+        document.write("<br><br>");
+    }
+    function mostra (frase) {
+        document.write("*************************");
+        pulaLinha();
+        document.write(frase);
+        pulaLinha();   
+    }
+        mostra("BEM-VINDO AO MEU PROGRAMA");
+        mostra("ELE REALMENTE FUNCIONA");
+        mostra("EU USEI FUNÇÃO PARA FAZER ISSO");
+
+</script>
+
+    <h3> 11. (Reflexão) Pessoas que não programam conseguem entender o que um código faz? </h3>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function exibeTitulo(titulo) {
+        document.write("<h1>" + titulo + "</h1>");
+        pulaLinha();
+    }
+
+    function exibeParagrafo(paragrafo) {
+        document.write("<p>" + paragrafo + "</p>");
+        pulaLinha();
+    }
+
+    // pede para alguém ler daqui em diante e veja se ele entende o que esta sendo feito
+    exibeTitulo("Bem-vindos");
+    exibeParagrafo("Este é um simples programa");
+
+</script>
+
+    <h3> 12. A idade do meu irmão </h3>
+    <br>
+
+
+
+<script> 
+    function pulaLinha () {
+        document.write("<br>");
+
+    }
+
+    function mostra (frase) {
+        document.write(frase);
+    }
+
+    var idadeAna = 15
+    var idadeCarlos = 18
+    var subtração = idadeAna - idadeCarlos
+    mostra("Nossa diferença de idade é " + subtração) 
+    pulalinha();
+    mostra(frase);
+
+// "Nossa diferença de idade é "
+// concatenar o resultado da subtração da idade de Ana (15) com a do irmão Carlos (18)
+// inclusive a tag <meta>
+</script>
+
+    <h3> 13. O problema das gerações </h3>
+    <br>
+
+    <script> 
+     
+        function pulaLinha () {
+            document.write("<br>");
+
+        }
+
+        function mostra (frase) {
+            document.write(frase);
+            pulaLinha ();
+        }
+        
+        var início = 1500;
+        var atual  = 2024;
+        var media = 28;
+        var período = atual - início;
+        mostra ("Quantas gerações passaram? " + (período / media) );
+
+    </script>
+
+
+
+</body>
+</html>

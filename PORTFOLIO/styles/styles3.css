@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: #eca1a6;
+    color:#50394c;
+}
+
+.titulo-destaque {   /*strong foi substituído pela classe titulo-destaque inserido no html*/
+    color: #c83349;
+}
+.apresentacao {
+    margin: 10% 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.apresentacao__conteudo {
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;    
+}
+
+.apresentacao__conteudo__titulo {
+    font-size: 36px;
+    font-family: "Krona One", sans-serif;   
+}
+
+.apresentacao__conteudo__texto {
+    font-size: 24px;
+    font-family: "Montserrat", sans-serif;     
+}
+
+.apresentacao__links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;    
+}
+
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 24px;        
+}
+
+.apresentacao__links__link {
+    /* background-color: #22D4FD; Ctrl KC */
+    border: 2px solid #F6F6F6;
+    width: 378px;
+    text-align: center;
+    border-radius: 8 px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 4px 2px;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: #c83349;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+
+/*exemplo de código do exercício
+
+   p {
+       margin: 10px;
+       border: 2px solid black;
+       padding: 5px;
+   }
+exemplo de flexbox com outra propriedade
+    .container {
+    flex-direction: row | row-reverse | column | column-reverse;
+    }
+
+    .container {
+    align-items: stretch | flex-start | flex-end | center | baseline | first baseline | last baseline | start | end | self-start | self-end + ... safe | unsafe;
+    }
+    */

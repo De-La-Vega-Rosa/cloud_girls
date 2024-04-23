@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> Atividade 22 - semana 1: Rosa de La Vega</h1>
+ <h2> 06. Execute códigos diferentes dependendo da condição </h2>
+  <h3> 07. Melhorando programa IMC </h3>
+    
+<script>
+    
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    function calculaImc(altura, peso) {
+
+    return peso / (altura * altura);
+    }
+    
+    var nome = prompt ("Informe seu nome");
+    var alturaInformada = prompt(nome + ", informa sua altura, utilizando ponto");
+    var pesoInformado = prompt(nome + ", informa seu peso, se houver fração utiliza ponto");
+
+    var imc = calculaImc(alturaInformada, pesoInformado);
+
+        mostra(nome + ", o seu IMC calculado é " + imc);
+
+    if(imc < 18.5) {
+
+        mostra ("Você está abaixo do recomendado.");
+    }
+
+    if (imc > 35) {
+
+        mostra("Você está acima do recomendado.");
+    }
+
+//    if (imc >= 18.5) {
+//        if(imc <= 35) {
+//            mostra("Seu IMC está excelente!");
+//        }
+//    }
+//A EXPRESSÃO ACIMA É VERBOSA, existe uma melhoria veja abaixo:
+
+    if (imc >= 18.5 && imc <= 35) {
+        mostra("Seu IMC está excelente!");
+        }
+
+
+</script>
+</body>
+</html>

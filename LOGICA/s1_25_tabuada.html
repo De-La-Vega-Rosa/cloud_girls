@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1> Atividade 25 - semana 1: Rosa de La Vega</h1>
+ <h2> 07. Repita tarefas </h2>
+  <h3> 09. Outra forma de repetir </h3>
+ 
+  
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+//for executa repetição, parecido com o while
+//se eu precisar de um total que some de 1 em 1
+//var total = 0;
+//total++;
+
+    for (var multiplicador = 1; multiplicador <= 10; multiplicador ++) {
+                mostra(7 * multiplicador);
+    }
+
+    mostra ("FIM");    
+
+</script>
+
+<h3> 10. De while para for! </h3>
+
+  
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    for (var contador = 1; contador <= 10; contador ++)
+        alert("Contador atual: " + contador);
+
+</script>
+
+
+<h3> 11. Do for para o while </h3>
+  
+<script>
+
+    function pulaLinha() {
+        document.write("<br><br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+   for( var i = 0; i < 10; i++) {
+       alert ("O resultado é  " + (2 * i));
+
+//    var i = 0;
+//    while (i < 10) {
+//        alert("O resultado é " + (2 * i));
+//        i++;
+    }
+
+</script>
+</body>
+</html>

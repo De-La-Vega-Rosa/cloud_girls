@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<h1> Atividade 21 - semana 1: Rosa de La Vega</h1>
+ <h2> 06. Execute códigos diferentes dependendo da condição </h2>
+  <h3> 01. Convertendo texto em números </h3>
+
+<body>
+    
+    <script>
+        
+        function pulaLinha() {
+            document.write("<br><br>");
+        }
+    
+        function mostra(frase) {
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var vitorias = parseInt (prompt("Entre com o número de vitórias."));
+       
+        var empates = parseInt (prompt("Entre com o número de empates."));
+        
+        var pontos = (vitorias * 3) + empates;
+
+        mostra("Os pontos do seu time são " + pontos);
+
+ //Como converter um texto para um numero?        
+ //inserir parseInt antes do comando prompt para ele considerar como número       
+ //parseInt converte o texto em número quando você escreve no prompt       
+    </script>
+
+<h3> 02. O total de convidados é ... </h3>
+
+    <script> 
+    function pulaLinha() {
+            document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = prompt("Número de convidados");
+    var vips = prompt("Número de convidados VIP's");
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+</script>    
+
+
+<h3> 03. Insistindo no total de convidados ... </h3>
+
+    <script> 
+    function pulaLinha() {
+            document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var convidados = parseInt(prompt("Número de convidados"));
+    var vips = parseInt(prompt("Número de convidados VIP's"));
+
+    var total = convidados + vips;
+
+    mostra("O total de convidados é " + total);
+
+    </script>    
+
+
+<h3> 05. Trabalhando com condições </h3>
+
+    <script> 
+    function pulaLinha() {
+            document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var vitorias = parseInt (prompt("Entre com o número de vitórias."));
+       
+    var empates = parseInt (prompt("Entre com o número de empates."));
+       
+    var pontos = (vitorias * 3) + empates;
+   
+    mostra("Os pontos do seu time são " + pontos);
+
+//condição: se pontos maior 28
+//if recebe usar o sinal de () 
+    if (pontos > 28) {
+        mostra ("Seu time está melhor que o ano passado.");
+    }
+//condição: se pontos menor 28
+    if (pontos < 28) {
+        mostra ("Seu time está pior que o ano passado.");
+    }
+//condição: se pontos igual 28
+    if (pontos == 28) {
+        mostra ("Seu time está igual que o ano passado.");
+    }
+
+    mostra ("FIM");
+    </script>
+
+</body>
+</html>

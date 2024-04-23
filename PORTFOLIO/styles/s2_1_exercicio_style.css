@@ -1,0 +1,34 @@
+body {
+    h1{
+        font-weight: bold;
+}
+
+span{
+        color: #22D4FD;
+        border: 1px solid #22D4FD;
+        padding: 10px;
+}    
+}
+
+/*
+1) Harmonia de cores no CSS
+body {
+    background-color: #suaCorPrincipal;
+}
+h1 {
+    color: #suaCorSecundária1;
+}
+p {
+    color: #suaCorSecundária2;
+}
+
+2) Identificando e corrigindo erros de cores no CSS
+body {
+    background-color: #000000;
+    color: #F6F6F6;
+}
+3) Jogando cores RGB no CSS
+body {
+    background-color: #FF5733; Laranja
+    color: #000000; Verde
+} */
