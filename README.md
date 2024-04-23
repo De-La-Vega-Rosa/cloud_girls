@@ -1,5 +1,5 @@
 # Mentoria Cloud Girls
 
-Repositório atividades desenvolvidas.
+Repositório criado durante programa mentoria, atividades desenvolvidas no curso plataforma Alura.
 
 ### Sejam bem vindas (os)
