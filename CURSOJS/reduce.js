@@ -7,7 +7,7 @@ function calculaMedia(listaDeNotas) {
    //   return acumulador + nota;
    // }, 0);
 
-    const somaDasNotas = listaDeNotas.reduce((acumulador, nota) => acumulador + nota, 0;
+    const somaDasNotas = listaDeNotas.reduce((acumulador, nota) => acumulador + nota, 0);
     
     const media = somaDasNotas / listaDeNotas.length;
     return media;
