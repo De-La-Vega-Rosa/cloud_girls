@@ -6,6 +6,7 @@ function tocaSom (seletorAudio) {
     }
     else {
         //alert('Elemento não encontrado');
+
         console.log('Elemento não encontrado ou seletor inválido');
     }
 
@@ -14,6 +15,7 @@ function tocaSom (seletorAudio) {
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //para
+
 for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     const tecla = listaDeTeclas[contador];
